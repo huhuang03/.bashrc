@@ -18,6 +18,8 @@ alias unmerged_rm='git branch --merged | egrep -v "(^\*|master|dev)" | xargs git
 
 alias cleantmp="rm -rf $HOME/tmp/*"
 
+alias bp="/Users/th/source/clone/iScript/pan.baidu.com.py"
+
 function lg() {
     adb logcat -s $1
 }
