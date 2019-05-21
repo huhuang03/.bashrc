@@ -39,6 +39,7 @@ export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 export ANDROID_HOME="$HOME/Library/Android/sdk"
 
 export NODE_PATH=/usr/local/lib/node_modules
+export FLUTTER_HOME="$HOME/source/clone/flutter"
 
 
 
@@ -46,6 +47,7 @@ export NODE_PATH=/usr/local/lib/node_modules
 export PATH=$PATH:$HOME/source/bin/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$FLUTTER_HOME/bin
 
 
 # auto jump
