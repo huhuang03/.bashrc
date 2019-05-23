@@ -63,3 +63,5 @@ bind '"\eOB": history-search-forward'
 export PATH=$PATH:$HOME/source/clone/nand2tetris/tools
 
 source $HOME/source/.bash_profile/git-completion.bash
+
+source /usr/local/etc/bash_completion.d/aria2c
