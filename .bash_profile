@@ -48,6 +48,9 @@ export PATH=$PATH:$HOME/source/bin/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$FLUTTER_HOME/bin
+# tmp path for nan2tetris
+export PATH=$PATH:$HOME/source/clone/nand2tetris/tools
+export PATH=$PATH:$HOME/source/clone/depot_tools
 
 
 # auto jump
@@ -59,8 +62,6 @@ bind '"\e[B": history-search-forward'
 bind '"\eOA": history-search-backward'
 bind '"\eOB": history-search-forward'
 
-# tmp path for nan2tetris
-export PATH=$PATH:$HOME/source/clone/nand2tetris/tools
 
 source $HOME/source/.bash_profile/git-completion.bash
 
