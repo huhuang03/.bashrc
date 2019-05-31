@@ -48,9 +48,10 @@ export PATH=$PATH:$HOME/source/bin/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$FLUTTER_HOME/bin
-# tmp path for nan2tetris
 export PATH=$PATH:$HOME/source/clone/nand2tetris/tools
 export PATH=$PATH:$HOME/source/clone/depot_tools
+# for cmake
+export PATH=$PATH:$ANDROID_HOME/cmake/3.10.2.4988404/bin
 
 
 # auto jump
