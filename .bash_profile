@@ -40,6 +40,7 @@ export ANDROID_HOME="$HOME/Library/Android/sdk"
 
 export NODE_PATH=/usr/local/lib/node_modules
 export FLUTTER_HOME="$HOME/source/clone/flutter"
+export SOURCE_HOME="$HOME/source"
 
 
 
@@ -52,6 +53,8 @@ export PATH=$PATH:$HOME/source/clone/nand2tetris/tools
 export PATH=$PATH:$HOME/source/clone/depot_tools
 # for cmake
 export PATH=$PATH:$ANDROID_HOME/cmake/3.10.2.4988404/bin
+# for util
+export PATH=$PATH:$SOURCE_HOME/util/bin
 
 
 # auto jump
