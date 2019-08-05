@@ -1,4 +1,4 @@
-# quick function
+# some alias and quick func
 function clone() {
 	git clone --depth 1 $1
 }
@@ -7,7 +7,6 @@ function say_done() {
 	osascript -e 'display notification "Task Done" with title "Notify"'
 }
 
-# some alias or quick function
 alias jump="export http_proxy='http:://127.0.0.1:1087';export https_proxy='http://127.0.0.1:1087'"
 
 alias unjump="unset http_proxy;unset https_proxy"
@@ -22,6 +21,14 @@ alias bp="/Users/th/source/clone/iScript/pan.baidu.com.py"
 
 function lg() {
     adb logcat -s $1
+}
+
+function hide {
+    chmod 000 $1
+}
+
+function unhide() {
+    chmod 755 $1
 }
 
 
