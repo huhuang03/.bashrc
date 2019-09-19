@@ -77,3 +77,9 @@ bind '"\eOB": history-search-forward'
 source $HOME/source/.bash_profile/git-completion.bash
 
 source /usr/local/etc/bash_completion.d/aria2c
+
+# BDB_HOME
+export BDB_HOME="/usr/local/BerkeleyDB.4.4/"
+
+# config ld
+export LD_LIBRARY_PATH=$BDB_HOME/lib:$LD_LIBRARY_PATH
