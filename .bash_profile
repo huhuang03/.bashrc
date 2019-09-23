@@ -45,6 +45,9 @@ export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 
 export ANDROID_HOME="$HOME/Library/Android/sdk"
 
+# BDB_HOME
+export BDB_HOME="/usr/local/BerkeleyDB.4.4/"
+
 export NODE_PATH=/usr/local/lib/node_modules
 export FLUTTER_HOME="$HOME/source/clone/flutter"
 export SOURCE_HOME="$HOME/source"
@@ -62,6 +65,7 @@ export PATH=$PATH:$HOME/source/clone/depot_tools
 export PATH=$PATH:$ANDROID_HOME/cmake/3.10.2.4988404/bin
 # for util
 export PATH=$PATH:$SOURCE_HOME/util/bin
+export PATH=$PATH:$BDB_HOME/bin/
 
 
 # auto jump
@@ -78,8 +82,6 @@ source $HOME/source/.bash_profile/git-completion.bash
 
 source /usr/local/etc/bash_completion.d/aria2c
 
-# BDB_HOME
-export BDB_HOME="/usr/local/BerkeleyDB.4.4/"
 
 # config ld
 export LD_LIBRARY_PATH=$BDB_HOME/lib:$LD_LIBRARY_PATH
