@@ -19,6 +19,8 @@ alias cleantmp="rm -rf $HOME/tmp/*"
 
 alias bp="/Users/th/source/clone/iScript/pan.baidu.com.py"
 
+alias ts="ssh th@106.54.233.138"
+
 function lg() {
     adb logcat -s $1
 }
