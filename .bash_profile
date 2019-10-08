@@ -1,3 +1,5 @@
+[[ -s $PWD/local.sh ]] && source $PWD/local.sh
+
 # some alias and quick func
 function clone() {
 	git clone --depth 1 $1
@@ -17,7 +19,7 @@ alias unmerged_rm='git branch --merged | egrep -v "(^\*|master|dev)" | xargs git
 
 alias cleantmp="rm -rf $HOME/tmp/*"
 
-alias bp="/Users/th/source/clone/iScript/pan.baidu.com.py"
+alias bp="$SRC_HOME/clone/iScript/pan.baidu.com.py"
 
 alias ts="ssh th@106.54.233.138"
 
@@ -41,7 +43,6 @@ parse_git_branch() {
 }
 export PS1="\h:\W \u\$(parse_git_branch)\$ "
 
-
 # some home
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 
@@ -53,7 +54,6 @@ export BDB_HOME="/usr/local/BerkeleyDB.4.4/"
 export NODE_PATH=/usr/local/lib/node_modules
 export FLUTTER_HOME="$HOME/source/clone/flutter"
 export SOURCE_HOME="$HOME/source"
-
 
 
 # change path
@@ -83,7 +83,6 @@ bind '"\eOB": history-search-forward'
 source $HOME/source/.bash_profile/git-completion.bash
 
 source /usr/local/etc/bash_completion.d/aria2c
-
 
 # config ld
 export LD_LIBRARY_PATH=$BDB_HOME/lib:$LD_LIBRARY_PATH
