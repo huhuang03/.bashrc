@@ -68,6 +68,8 @@ export PATH=$PATH:$ANDROID_HOME/cmake/3.10.2.4988404/bin
 # for util
 export PATH=$PATH:$SOURCE_HOME/util/bin
 export PATH=$PATH:$BDB_HOME/bin/
+export PATH=$PATH:$HOME/p/ghidra_9.1-BETA_DEV
+export PATH=$PATH:$HOME/source/dex-tools-2.1-SNAPSHOT
 
 
 # auto jump
