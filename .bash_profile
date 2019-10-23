@@ -24,6 +24,11 @@ alias bp="$SRC_HOME/clone/iScript/pan.baidu.com.py"
 alias ts="ssh th@106.54.140.147"
 alias em="open -a Emacs.app $1"
 alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs"
+alias cnpm="npm --registry=https://registry.npm.taobao.org \
+--cache=$HOME/.npm/.cache/cnpm \
+--disturl=https://npm.taobao.org/dist \
+--userconfig=$HOME/.cnpmrc"
+
 
 function lg() {
     adb logcat -s $1
