@@ -5,6 +5,10 @@ function clone() {
 	git clone --depth 1 $1
 }
 
+function sce() {
+[[ -s $1 ]] && source $1
+}
+
 function say_done() {
 	osascript -e 'display notification "Task Done" with title "Notify"'
 }
@@ -51,7 +55,7 @@ parse_git_branch() {
 export PS1="\h:\W \u\$(parse_git_branch)\$ "
 
 # some home
-export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+[[ -s /usr/libexec/java_home ]] && export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 
 export ANDROID_HOME="$HOME/Library/Android/sdk"
 
@@ -95,4 +99,3 @@ source /usr/local/etc/bash_completion.d/aria2c
 
 # config ld
 export LD_LIBRARY_PATH=$BDB_HOME/lib:$LD_LIBRARY_PATH
-
