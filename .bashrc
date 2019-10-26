@@ -93,9 +93,9 @@ bind '"\eOA": history-search-backward'
 bind '"\eOB": history-search-forward'
 
 
-source $HOME/source/.bash_profile/git-completion.bash
+sce $HOME/source/.bashrc/git-completion.bash
 
-source /usr/local/etc/bash_completion.d/aria2c
+sce /usr/local/etc/bash_completion.d/aria2c
 
 # config ld
 export LD_LIBRARY_PATH=$BDB_HOME/lib:$LD_LIBRARY_PATH
