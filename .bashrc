@@ -52,7 +52,6 @@ function unhide() {
 parse_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
-export PS1="\h:\W \u\$(parse_git_branch)\$ "
 
 # some home
 [[ -s /usr/libexec/java_home ]] && export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
@@ -82,21 +81,15 @@ export PATH=$PATH:$BDB_HOME/bin/
 export PATH=$PATH:$HOME/p/ghidra_9.1-BETA_DEV
 export PATH=$PATH:$HOME/source/dex-tools-2.1-SNAPSHOT
 export PATH=$PATH:$HOME/source/fuchsia/.jiri_root/bin
+export PATH=/usr/local/sbin:$PATH
 
 
 # auto jump
-[[ -s /Users/th/.autojump/etc/profile.d/autojump.sh ]] && source /Users/th/.autojump/etc/profile.d/autojump.sh
+# [[ -s /Users/th/.autojump/etc/profile.d/autojump.sh ]] && source /Users/th/.autojump/etc/profile.d/autojump.sh
 
-# Key bindings, up/down arrow searches through history
-bind '"\e[A": history-search-backward'
-bind '"\e[B": history-search-forward'
-bind '"\eOA": history-search-backward'
-bind '"\eOB": history-search-forward'
-
-
-sce $HOME/source/.bashrc/git-completion.bash
-
-sce /usr/local/etc/bash_completion.d/aria2c
+if [ -n "$ZSH_VERSION" ]; then
+    sce $HOME/source/.bashrc/git-completion.zsh
+fi
 
 # config ld
 export LD_LIBRARY_PATH=$BDB_HOME/lib:$LD_LIBRARY_PATH
