@@ -12,6 +12,18 @@ function sce() {
 function say_done() {
 	osascript -e 'display notification "Task Done" with title "Notify"'
 }
+parse_git_branch() {
+    echo `git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'`
+}
+
+branch_info=$(parse_git_branch)
+setopt prompt_subst
+PROMPT='[%~]$ ${branch_info}'
+if [ -n "$ZSH_VERSION" ]; then
+    #. $HOME/source/.bashrc/git-completion.zsh
+    # sce $HOME/source/.bashrc/git-completion.zsh
+    # zsh_show_git_branch
+fi
 
 alias jump="export http_proxy='http:://127.0.0.1:1087';export https_proxy='http://127.0.0.1:1087'"
 
@@ -87,9 +99,6 @@ export PATH=/usr/local/sbin:$PATH
 # auto jump
 # [[ -s /Users/th/.autojump/etc/profile.d/autojump.sh ]] && source /Users/th/.autojump/etc/profile.d/autojump.sh
 
-if [ -n "$ZSH_VERSION" ]; then
-    sce $HOME/source/.bashrc/git-completion.zsh
-fi
 
 # config ld
 export LD_LIBRARY_PATH=$BDB_HOME/lib:$LD_LIBRARY_PATH
