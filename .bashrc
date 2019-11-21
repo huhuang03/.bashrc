@@ -12,13 +12,13 @@ function sce() {
 function say_done() {
 	osascript -e 'display notification "Task Done" with title "Notify"'
 }
-parse_git_branch() {
-    echo `git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'`
-}
+# parse_git_branch() {
+#     echo `git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'`
+# }
 
-branch_info=$(parse_git_branch)
-setopt prompt_subst
-PROMPT='[%~]$ ${branch_info}'
+# branch_info=$(parse_git_branch)
+# setopt prompt_subst
+# PROMPT='[%~]$ ${branch_info}'
 if [ -n "$ZSH_VERSION" ]; then
     #. $HOME/source/.bashrc/git-completion.zsh
     # sce $HOME/source/.bashrc/git-completion.zsh
@@ -94,6 +94,7 @@ export PATH=$PATH:$HOME/p/ghidra_9.1-BETA_DEV
 export PATH=$PATH:$HOME/source/dex-tools-2.1-SNAPSHOT
 export PATH=$PATH:$HOME/source/fuchsia/.jiri_root/bin
 export PATH=/usr/local/sbin:$PATH
+export PATH=~/.local/:$PATH
 
 
 # auto jump
