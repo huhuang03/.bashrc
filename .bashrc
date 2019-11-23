@@ -76,6 +76,7 @@ export BDB_HOME="/usr/local/BerkeleyDB.4.4/"
 export NODE_PATH=/usr/local/lib/node_modules
 export FLUTTER_HOME="$HOME/source/clone/flutter"
 export SOURCE_HOME="$HOME/source"
+export FLUTTER_HOME="$SOURCE_HOME/flutter"
 
 
 # change path
@@ -95,6 +96,7 @@ export PATH=$PATH:$HOME/source/dex-tools-2.1-SNAPSHOT
 export PATH=$PATH:$HOME/source/fuchsia/.jiri_root/bin
 export PATH=/usr/local/sbin:$PATH
 export PATH=~/.local/:$PATH
+export PATH=$FLUTTER_HOME/bin:$PATH
 
 
 # auto jump
