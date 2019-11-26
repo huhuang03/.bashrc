@@ -97,10 +97,11 @@ export PATH=$PATH:$HOME/source/fuchsia/.jiri_root/bin
 export PATH=/usr/local/sbin:$PATH
 export PATH=~/.local/:$PATH
 export PATH=$FLUTTER_HOME/bin:$PATH
+export PATH="$PATH":"$HOME/.pub-cache/bin"
 
 
 # auto jump
-# [[ -s /Users/th/.autojump/etc/profile.d/autojump.sh ]] && source /Users/th/.autojump/etc/profile.d/autojump.sh
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
 
 # config ld
