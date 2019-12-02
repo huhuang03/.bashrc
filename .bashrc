@@ -25,7 +25,8 @@ if [ -n "$ZSH_VERSION" ]; then
     # zsh_show_git_branch
 fi
 
-alias jump="export http_proxy='http:://127.0.0.1:1087';export https_proxy='http://127.0.0.1:1087'"
+PROXY_PORT=7890
+alias jump="export http_proxy='http:://127.0.0.1:$PROXY_PORT';export https_proxy='http://127.0.0.1:$PROXY_PORT'"
 
 alias unjump="unset http_proxy;unset https_proxy"
 
