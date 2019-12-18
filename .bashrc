@@ -99,6 +99,7 @@ export PATH=/usr/local/sbin:$PATH
 export PATH=~/.local/:$PATH
 export PATH=$FLUTTER_HOME/bin:$PATH
 export PATH="$PATH":"$HOME/.pub-cache/bin"
+export PATH=$PATH:"/Users/th/Library/Python/3.7/bin"
 
 
 # auto jump
@@ -110,3 +111,4 @@ export LD_LIBRARY_PATH=$BDB_HOME/lib:$LD_LIBRARY_PATH
 
 bindkey "^[[A" history-beginning-search-backward
 bindkey "^[[B" history-beginning-search-forward
+
