@@ -75,9 +75,9 @@ export ANDROID_HOME="$HOME/Library/Android/sdk"
 export BDB_HOME="/usr/local/BerkeleyDB.4.4/"
 
 export NODE_PATH=/usr/local/lib/node_modules
-export FLUTTER_HOME="$HOME/source/clone/flutter"
 export SOURCE_HOME="$HOME/source"
 export FLUTTER_HOME="$SOURCE_HOME/flutter"
+export DART_HOME="$FLUTTER_HOME/bin/cache/dart-sdk"
 
 
 # change path
@@ -100,6 +100,8 @@ export PATH=~/.local/:$PATH
 export PATH=$FLUTTER_HOME/bin:$PATH
 export PATH="$PATH":"$HOME/.pub-cache/bin"
 export PATH=$PATH:"/Users/th/Library/Python/3.7/bin"
+export PATH=$PATH:$DART_HOME/bin
+
 
 
 # auto jump
@@ -114,3 +116,12 @@ bindkey "^[[B" history-beginning-search-forward
 
 export PUB_HOSTED_URL=https://pub.flutter-io.cn
 export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
+
+
+# emcc
+export EMSDK=/Users/th/source/emsdk
+export PATH=$PATH:/Users/th/source/emsdk
+export PATH=$PATH:/Users/th/source/emsdk/upstream/emscripten
+export PATH=$PATH:/Users/th/source/emsdk/node/12.9.1_64bit/bin
+export EM_CONFIG=/Users/th/.emscripten
+export EMSDK_NODE=/Users/th/source/emsdk/node/12.9.1_64bit/bin/node
