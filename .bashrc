@@ -101,7 +101,7 @@ export PATH=$FLUTTER_HOME/bin:$PATH
 export PATH="$PATH":"$HOME/.pub-cache/bin"
 export PATH=$PATH:"/Users/th/Library/Python/3.7/bin"
 export PATH=$PATH:$DART_HOME/bin
-
+export PATH=$PATH:$ANDROID_HOME/build-tools/28.0.3
 
 
 # auto jump
