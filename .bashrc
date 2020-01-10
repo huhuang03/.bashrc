@@ -12,6 +12,7 @@ function sce() {
 function say_done() {
 	osascript -e 'display notification "Task Done" with title "Notify"'
 }
+
 # parse_git_branch() {
 #     echo `git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'`
 # }
@@ -125,3 +126,6 @@ export PATH=$PATH:/Users/th/source/emsdk/upstream/emscripten
 export PATH=$PATH:/Users/th/source/emsdk/node/12.9.1_64bit/bin
 export EM_CONFIG=/Users/th/.emscripten
 export EMSDK_NODE=/Users/th/source/emsdk/node/12.9.1_64bit/bin/node
+
+
+# Some links
