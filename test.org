@@ -1,8 +1,0 @@
-* Some test
-  #+BEGIN_SRC bash :tangle
- echo "Hello" 
-  #+END_SRC
-
-  #+BEGIN_SRC bash :tanble
- echo "hello2" 
-  #+END_SRC

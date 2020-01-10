@@ -1,0 +1,5 @@
+#+PROPERTY: header-args :tangle mybashrc
+* Some question
+  #+BEGIN_SRC bash :taggle mybashrc
+  
+  #+END_SRC

@@ -13,6 +13,10 @@ function say_done() {
 	osascript -e 'display notification "Task Done" with title "Notify"'
 }
 
+function acode() {
+    open -a 'Android Studio' $1
+}
+
 # parse_git_branch() {
 #     echo `git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'`
 # }
@@ -129,3 +133,5 @@ export EMSDK_NODE=/Users/th/source/emsdk/node/12.9.1_64bit/bin/node
 
 
 # Some links
+emacs mybashrc.org --batch -f org-babel-tangle > /dev/null 2>&1
+source mybashrc
