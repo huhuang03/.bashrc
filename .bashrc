@@ -122,6 +122,8 @@ bindkey "^[[B" history-beginning-search-forward
 export PUB_HOSTED_URL=https://pub.flutter-io.cn
 export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
 
+alias cnflutter="export PUB_HOSTED_URL=https://pub.flutter-io.cn; export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn"
+alias uncnflutter="unset PUB_HOSTED_URL;unset FLUTTER_STORAGE_BASE_URL"
 
 # emcc
 export EMSDK=/Users/th/source/emsdk
@@ -133,5 +135,6 @@ export EMSDK_NODE=/Users/th/source/emsdk/node/12.9.1_64bit/bin/node
 
 
 # Some links
-emacs mybashrc.org --batch -f org-babel-tangle > /dev/null 2>&1
-source mybashrc
+# how to handle the pwd issue?
+# emacs mybashrc.org --batch -f org-babel-tangle > /dev/null 2>&1
+# source $SOURCE_HOME/.bashrc/mybashrc
