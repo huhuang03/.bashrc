@@ -133,6 +133,8 @@ export PATH=$PATH:/Users/th/source/emsdk/node/12.9.1_64bit/bin
 export EM_CONFIG=/Users/th/.emscripten
 export EMSDK_NODE=/Users/th/source/emsdk/node/12.9.1_64bit/bin/node
 
+alias ii=open
+
 
 # Some links
 # how to handle the pwd issue?
