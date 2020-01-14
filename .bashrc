@@ -17,6 +17,10 @@ function acode() {
     open -a 'Android Studio' $1
 }
 
+function xcode() {
+    open -a 'XCode.app' $1
+}
+
 # parse_git_branch() {
 #     echo `git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'`
 # }
