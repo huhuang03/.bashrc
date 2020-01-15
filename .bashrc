@@ -78,18 +78,21 @@ parse_git_branch() {
 # some home
 [[ -s /usr/libexec/java_home ]] && export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 
+export SOURCE_HOME="$HOME/source"
 export ANDROID_HOME="$HOME/Library/Android/sdk"
 
 # BDB_HOME
 export BDB_HOME="/usr/local/BerkeleyDB.4.4/"
 
+
 export NODE_PATH=/usr/local/lib/node_modules
-export SOURCE_HOME="$HOME/source"
 export FLUTTER_HOME="$SOURCE_HOME/flutter"
 export DART_HOME="$FLUTTER_HOME/bin/cache/dart-sdk"
 
+export GHIDRA_HOME="$SOURCE_HOME/ghidra_9.1-BETA_DEV"
 
 # change path
+export PATH=$PATH:$GHIDRA_HOME/
 export PATH=$PATH:$HOME/source/bin/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH=$PATH:$ANDROID_HOME/tools
