@@ -145,5 +145,6 @@ alias ii=open
 
 # Some links
 # how to handle the pwd issue?
-# emacs mybashrc.org --batch -f org-babel-tangle > /dev/null 2>&1
-# source $SOURCE_HOME/.bashrc/mybashrc
+cd "$SOURCE_HOME/.bashrc"
+emacs mybashrc.org --batch -f org-babel-tangle > /dev/null 2>&1
+source $SOURCE_HOME/.bashrc/mybashrc
