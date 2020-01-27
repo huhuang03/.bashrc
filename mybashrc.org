@@ -2,3 +2,18 @@
 * Some question
   #+BEGIN_SRC bash :taggle mybashrc
   #+END_SRC
+
+* config java home
+  The JDK have two impl. OracleJDK and OpenJDK
+
+** How can we know the installed java
+=/usr/libexec/java_home -V=
+
+In our case, there are two jdk
+- com.oracle.java.12.jdk
+- com.oracle.java.8u201.jdk
+
+  Now we config java 1.8
+  #+BEGIN_SRC bash :taggle mybashrc
+[[ -s /usr/libexec/java_home ]] && export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+  #+END_SRC

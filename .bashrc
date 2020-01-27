@@ -76,7 +76,6 @@ parse_git_branch() {
 }
 
 # some home
-[[ -s /usr/libexec/java_home ]] && export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 
 export SOURCE_HOME="$HOME/source"
 export ANDROID_HOME="$HOME/Library/Android/sdk"
