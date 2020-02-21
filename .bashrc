@@ -148,3 +148,5 @@ cd "$SOURCE_HOME/.bashrc"
 emacs mybashrc.org --batch -f org-babel-tangle > /dev/null 2>&1
 source $SOURCE_HOME/.bashrc/mybashrc
 cd - > /dev/null
+
+export ENABLE_FLUTTER_DESKTOP=true
