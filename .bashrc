@@ -34,26 +34,6 @@ if [ -n "$ZSH_VERSION" ]; then
     # zsh_show_git_branch
 fi
 
-PROXY_PORT=7890
-alias jump="export http_proxy='http:://127.0.0.1:$PROXY_PORT';export https_proxy='http://127.0.0.1:$PROXY_PORT'"
-
-alias unjump="unset http_proxy;unset https_proxy"
-
-alias p3=python3
-
-alias unmerged_rm='git branch --merged | egrep -v "(^\*|master|dev)" | xargs git branch -d'
-
-alias cleantmp="rm -rf $HOME/tmp/*"
-
-alias bp="$SRC_HOME/clone/iScript/pan.baidu.com.py"
-
-alias ts="ssh th@106.54.140.147"
-alias em="open -a Emacs.app $1"
-alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs"
-alias cnpm="npm --registry=https://registry.npm.taobao.org \
---cache=$HOME/.npm/.cache/cnpm \
---disturl=https://npm.taobao.org/dist \
---userconfig=$HOME/.cnpmrc"
 
 
 function lg() {
@@ -150,3 +130,21 @@ source $SOURCE_HOME/.bashrc/mybashrc
 cd - > /dev/null
 
 export ENABLE_FLUTTER_DESKTOP=true
+
+
+# Alias
+PROXY_PORT=7890
+alias jump="export http_proxy='http:://127.0.0.1:$PROXY_PORT';export https_proxy='http://127.0.0.1:$PROXY_PORT'"
+alias unjump="unset http_proxy;unset https_proxy"
+alias p3=python3
+alias unmerged_rm='git branch --merged | egrep -v "(^\*|master|dev)" | xargs git branch -d'
+alias cleantmp="rm -rf $HOME/tmp/*"
+alias bp="$SRC_HOME/clone/iScript/pan.baidu.com.py"
+alias ts="ssh th@106.54.140.147"
+alias em="open -a Emacs.app $1"
+alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs"
+alias cnpm="npm --registry=https://registry.npm.taobao.org \
+--cache=$HOME/.npm/.cache/cnpm \
+--disturl=https://npm.taobao.org/dist \
+--userconfig=$HOME/.cnpmrc"
+alias s3=sqlite3
