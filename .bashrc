@@ -149,3 +149,4 @@ alias cnpm="npm --registry=https://registry.npm.taobao.org \
 --disturl=https://npm.taobao.org/dist \
 --userconfig=$HOME/.cnpmrc"
 alias s3=sqlite3
+alias pi="ssh pi@192.168.2.188"
