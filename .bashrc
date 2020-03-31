@@ -59,6 +59,7 @@ parse_git_branch() {
 
 export SOURCE_HOME="$HOME/source"
 export ANDROID_HOME="$HOME/Library/Android/sdk"
+export BOOST_ROOT="/usr/local/Cellar/boost/1.70.0/"
 
 # BDB_HOME
 export BDB_HOME="/usr/local/BerkeleyDB.4.4/"
