@@ -136,8 +136,9 @@ export ENABLE_FLUTTER_DESKTOP=true
 
 # Alias
 PROXY_PORT=7890
-alias jump="export http_proxy='http:://127.0.0.1:$PROXY_PORT';export https_proxy='http://127.0.0.1:$PROXY_PORT'"
+alias jump="export http_proxy='http://127.0.0.1:$PROXY_PORT';export https_proxy='http://127.0.0.1:$PROXY_PORT'"
 alias unjump="unset http_proxy;unset https_proxy"
+alias nodejump="npm config set proxy http://127.0.0.1:$PROXY_PORT;npm config set https-proxy http://127.0.0.1:$PROXY_PORT"
 alias p3=python3
 alias unmerged_rm='git branch --merged | egrep -v "(^\*|master|dev)" | xargs git branch -d'
 alias cleantmp="rm -rf $HOME/tmp/*"
