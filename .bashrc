@@ -17,6 +17,10 @@ function acode() {
     open -a 'Android Studio' $1
 }
 
+function icode() {
+    open -a 'IntelliJ IDEA CE' $1
+}
+
 function xcode() {
     open -a 'XCode.app' $1
 }
