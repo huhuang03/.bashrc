@@ -75,6 +75,7 @@ export DART_HOME="$FLUTTER_HOME/bin/cache/dart-sdk"
 
 export GHIDRA_HOME="$SOURCE_HOME/ghidra/ghidra_9.1.2_PUBLIC"
 
+
 # change path
 export PATH=$PATH:$GHIDRA_HOME/
 export PATH=$PATH:$HOME/source/bin/bin
@@ -98,6 +99,7 @@ export PATH=$PATH:"/Users/th/Library/Python/3.7/bin"
 export PATH=$PATH:$DART_HOME/bin
 export PATH=$PATH:$ANDROID_HOME/build-tools/28.0.3
 export PATH=$PATH:$ANDROID_HOME/ndk-bundle
+export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 
 
@@ -157,3 +159,8 @@ alias cnpm="npm --registry=https://registry.npm.taobao.org \
 --userconfig=$HOME/.cnpmrc"
 alias s3=sqlite3
 alias pi="ssh pi@192.168.2.188"
+
+
+# brew don't upgrade
+HOMEBREW_NO_AUTO_UPDATE=1
+
