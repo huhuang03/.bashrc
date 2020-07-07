@@ -101,6 +101,7 @@ export PATH=$PATH:$ANDROID_HOME/build-tools/28.0.3
 export PATH=$PATH:$ANDROID_HOME/ndk-bundle
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:/Library/Apple/usr/bin/
 
 
 # auto jump
