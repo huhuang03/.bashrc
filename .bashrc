@@ -165,3 +165,6 @@ alias pi="ssh pi@192.168.2.188"
 # brew don't upgrade
 HOMEBREW_NO_AUTO_UPDATE=1
 
+
+# python virtualenvwrapper
+export VIRTUALENVWRAPPER_PYTHON=python3
