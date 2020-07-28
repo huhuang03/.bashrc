@@ -128,6 +128,8 @@ export PATH=$PATH:/Users/th/source/emsdk/node/12.9.1_64bit/bin
 export EM_CONFIG=/Users/th/.emscripten
 export EMSDK_NODE=/Users/th/source/emsdk/node/12.9.1_64bit/bin/node
 export PATH=$PATH:$HOME/source/depot_tools
+export PATH=$PATH:$HOME/source/mkbootimg_tools
+export PATH=$PATH:$HOME/bin
 
 alias ii=open
 
@@ -160,6 +162,7 @@ alias cnpm="npm --registry=https://registry.npm.taobao.org \
 --userconfig=$HOME/.cnpmrc"
 alias s3=sqlite3
 alias pi="ssh pi@192.168.2.188"
+alias agdb="/Users/th/Library/Android/sdk/ndk-bundle/prebuilt/darwin-x86_64/bin/gdb"
 
 
 # brew don't upgrade
