@@ -130,6 +130,7 @@ export EMSDK_NODE=/Users/th/source/emsdk/node/12.9.1_64bit/bin/node
 export PATH=$PATH:$HOME/source/depot_tools
 export PATH=$PATH:$HOME/source/mkbootimg_tools
 export PATH=$PATH:$HOME/bin
+export PATH=/usr/local/opt/binutils/bin:$PATH
 
 alias ii=open
 
