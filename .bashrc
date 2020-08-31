@@ -173,3 +173,6 @@ HOMEBREW_NO_AUTO_UPDATE=1
 
 # python virtualenvwrapper
 export VIRTUALENVWRAPPER_PYTHON=python3
+
+# go source
+cd ~/source
