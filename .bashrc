@@ -61,6 +61,7 @@ parse_git_branch() {
 
 # some home
 
+export DEX2JAR_HOME="$HOME/source/dex-tools-2.1-SNAPSHOT/"
 export SOURCE_HOME="$HOME/source"
 export ANDROID_HOME="$HOME/Library/Android/sdk"
 export BOOST_ROOT="/usr/local/Cellar/boost/1.70.0/"
@@ -102,6 +103,7 @@ export PATH=$PATH:$ANDROID_HOME/ndk-bundle
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:/Library/Apple/usr/bin/
+export PATH=$PATH:$DEX2JAR_HOME
 
 
 # auto jump
