@@ -61,6 +61,8 @@ parse_git_branch() {
 
 # some home
 
+export PROTOBUF_ROOT_DIR=/usr/local/opt/protobuf
+export OPENSSL_ROOT_DIR=/usr/local/opt/openssl@1.1
 export DEX2JAR_HOME="$HOME/source/dex-tools-2.1-SNAPSHOT/"
 export SOURCE_HOME="$HOME/source"
 export ANDROID_HOME="$HOME/Library/Android/sdk"
@@ -178,3 +180,4 @@ export VIRTUALENVWRAPPER_PYTHON=python3
 
 # go source
 cd ~/source
+
