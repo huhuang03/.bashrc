@@ -66,6 +66,8 @@ export OPENSSL_ROOT_DIR=/usr/local/opt/openssl@1.1
 export DEX2JAR_HOME="$HOME/source/dex-tools-2.1-SNAPSHOT/"
 export SOURCE_HOME="$HOME/source"
 export ANDROID_HOME="$HOME/Library/Android/sdk"
+export NDK_HOME="$ANDROID_HOME/ndk"
+export ANDROID_NDK_HOME="$NDK_HOME"
 export BOOST_ROOT="/usr/local/Cellar/boost/1.70.0/"
 
 # BDB_HOME
