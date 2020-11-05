@@ -137,6 +137,7 @@ export PATH=$PATH:$HOME/source/depot_tools
 export PATH=$PATH:$HOME/source/mkbootimg_tools
 export PATH=$PATH:$HOME/bin
 export PATH=/usr/local/opt/binutils/bin:$PATH
+export PATH=$PATH:/Users/th/u/source/vcpkg/
 
 alias ii=open
 
