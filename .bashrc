@@ -190,3 +190,5 @@ export GOPATH=~/u/go
 
 # password is aaass
 alias ssh_ipad="ssh -p 22 root@172.16.22.155"
+
+alias ec=emacsclient
