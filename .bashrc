@@ -137,6 +137,7 @@ export PATH=$PATH:$HOME/source/depot_tools
 export PATH=$PATH:$HOME/source/mkbootimg_tools
 export PATH=$PATH:$HOME/bin
 export PATH=$PATH:/Users/th/u/source/vcpkg/
+export PATH=$PATH:$HOME/source/nasm-2.15.05
 
 alias ii=open
 
