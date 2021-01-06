@@ -171,7 +171,9 @@ alias cnpm="npm --registry=https://registry.npm.taobao.org \
 alias s3=sqlite3
 alias pi="ssh pi@192.168.2.188"
 alias pi_dm="ssh pi@172.16.23.36"
-alias agdb="$ANDROID_HOME/ndk-bundle/prebuilt/darwin-x86_64/bin/gdb"
+alias agdb="$NDK_HOME/21.1.6352462/prebuilt/darwin-x86_64/bin/gdb"
+# alias aas="$NDK_HOME/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/arm-linux-androideabi/bin/as"
+# alias ald="$NDK_HOME/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/arm-linux-androideabi/bin/ld"
 
 
 # brew don't upgrade
