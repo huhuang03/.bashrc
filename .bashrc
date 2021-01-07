@@ -52,6 +52,9 @@ function unhide() {
     chmod 755 $1
 }
 
+function ubuntu_cn_repo {
+}
+
 
 # add git branch to shell
 # PS1 origin is \h:\W \u\$
