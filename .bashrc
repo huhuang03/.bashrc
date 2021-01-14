@@ -1,5 +1,3 @@
-[[ -s $PWD/local.sh ]] && source $PWD/local.sh
-
 # some alias and quick func
 function clone() {
 	git clone --depth 1 $1
@@ -69,7 +67,7 @@ export OPENSSL_ROOT_DIR=/usr/local/opt/openssl@1.1
 export DEX2JAR_HOME="$HOME/source/dex-tools-2.1-SNAPSHOT/"
 export SOURCE_HOME="$HOME/source"
 export ANDROID_HOME="$HOME/Library/Android/sdk"
-export NDK_HOME="$ANDROID_HOME/ndk"
+export NDK_HOME="$ANDROID_HOME/ndk/21.1.6352462"
 export ANDROID_NDK_HOME="$NDK_HOME"
 export BOOST_ROOT="/usr/local/Cellar/boost/1.70.0/"
 
@@ -194,7 +192,11 @@ fi
 
 export GOPATH=~/u/go
 
-# password is aaass
-alias ssh_ipad="ssh -p 22 root@172.16.22.155"
 
 alias ec=emacsclient
+
+cur_dir="$(dirname "$0")"
+[[ -s $cur_dir/local.sh ]] && source $cur_dir/local.sh
+
+# Java Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home
