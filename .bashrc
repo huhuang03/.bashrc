@@ -37,11 +37,6 @@ if [ -n "$ZSH_VERSION" ]; then
 fi
 
 
-
-function lg() {
-    adb logcat -s $1
-}
-
 function hide {
     chmod 000 $1
 }
