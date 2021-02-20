@@ -1,4 +1,7 @@
 # some alias and quick func
+# Java Home
+export JAVA_HOME=$(/usr/libexec/java_home -v 12)
+
 function clone() {
 	git clone --depth 1 $1
 }
@@ -134,6 +137,7 @@ export PATH=$PATH:$HOME/source/mkbootimg_tools
 export PATH=$PATH:$HOME/bin
 export PATH=$PATH:/Users/th/u/source/vcpkg/
 export PATH=$PATH:$HOME/source/nasm-2.15.05
+export PATH=$PATH:$JAVA_HOME/bin
 
 alias ii=open
 
@@ -193,5 +197,3 @@ alias ec=emacsclient
 cur_dir="$(dirname "$0")"
 [[ -s $cur_dir/local.sh ]] && source $cur_dir/local.sh
 
-# Java Home
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home
