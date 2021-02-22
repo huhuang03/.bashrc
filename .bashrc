@@ -77,7 +77,7 @@ export NODE_PATH=/usr/local/lib/node_modules
 export FLUTTER_HOME="$SOURCE_HOME/flutter"
 export DART_HOME="$FLUTTER_HOME/bin/cache/dart-sdk"
 
-export GHIDRA_HOME="$SOURCE_HOME/ghidra/ghidra_9.1.2_PUBLIC"
+export GHIDRA_HOME="$SOURCE_HOME/ghidra/ghidra_9.3_DEV"
 
 
 # change path
