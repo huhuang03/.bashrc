@@ -138,6 +138,7 @@ export PATH=$PATH:$HOME/bin
 export PATH=$PATH:/Users/th/u/source/vcpkg/
 export PATH=$PATH:$HOME/source/nasm-2.15.05
 export PATH=$PATH:$JAVA_HOME/bin
+export PATH=$PATH:~/source/depot_tools
 
 alias ii=open
 
