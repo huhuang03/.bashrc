@@ -163,7 +163,7 @@ alias unmerged_rm='git branch --merged | egrep -v "(^\*|master|dev)" | xargs git
 alias cleantmp="rm -rf $HOME/tmp/*"
 alias bp="$SRC_HOME/clone/iScript/pan.baidu.com.py"
 # pwd: 1qQ11234
-alias ts="ssh ubuntu@1.15.78.142"
+alias ts="ssh centos@1.15.78.142"
 alias em="open -a Emacs.app $1"
 alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs"
 alias cnpm="npm --registry=https://registry.npm.taobao.org \
