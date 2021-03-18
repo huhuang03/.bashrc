@@ -199,3 +199,5 @@ alias ec=emacsclient
 cur_dir="$(dirname "$0")"
 [[ -s $cur_dir/local.sh ]] && source $cur_dir/local.sh
 
+# pkg_config_path
+export PKG_CONFIG_PATH="/usr/local/opt/icu4c/lib/pkgconfig"
