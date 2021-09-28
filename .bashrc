@@ -33,11 +33,11 @@ function xcode() {
 # branch_info=$(parse_git_branch)
 # setopt prompt_subst
 # PROMPT='[%~]$ ${branch_info}'
-if [ -n "$ZSH_VERSION" ]; then
+# if [ -n "$ZSH_VERSION" ]; then
     #. $HOME/source/.bashrc/git-completion.zsh
     # sce $HOME/source/.bashrc/git-completion.zsh
     # zsh_show_git_branch
-fi
+# fi
 
 
 function hide {
@@ -46,9 +46,6 @@ function hide {
 
 function unhide() {
     chmod 755 $1
-}
-
-function ubuntu_cn_repo {
 }
 
 
@@ -116,8 +113,8 @@ export PATH=$PATH:$DEX2JAR_HOME
 # config ld
 export LD_LIBRARY_PATH=$BDB_HOME/lib:$LD_LIBRARY_PATH
 
-bindkey "^[[A" history-beginning-search-backward
-bindkey "^[[B" history-beginning-search-forward
+# bindkey "^[[A" history-beginning-search-backward
+# bindkey "^[[B" history-beginning-search-forward
 
 export PUB_HOSTED_URL=https://pub.flutter-io.cn
 export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
