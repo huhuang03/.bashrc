@@ -60,7 +60,7 @@
 # export PROTOBUF_ROOT_DIR=/usr/local/opt/protobuf
 # export OPENSSL_ROOT_DIR=/usr/local/opt/openssl@1.1
 # export DEX2JAR_HOME="$HOME/source/dex-tools-2.1-SNAPSHOT/"
-# export SOURCE_HOME="$HOME/source"
+export SOURCE_HOME="$HOME/source"
 
 # ANDROID
 export ANDROID_HOME="$HOME/Library/Android/sdk"
@@ -76,8 +76,13 @@ export PATH=$PATH:$ANDROID_HOME/tools
 # 
 # 
 # export NODE_PATH=/usr/local/lib/node_modules
-# export FLUTTER_HOME="$SOURCE_HOME/flutter"
-# export DART_HOME="$FLUTTER_HOME/bin/cache/dart-sdk"
+
+# Flutter and dart
+export FLUTTER_HOME="$SOURCE_HOME/flutter"
+export DART_HOME="$FLUTTER_HOME/bin/cache/dart-sdk"
+export PATH=$FLUTTER_HOME/bin:$PATH
+export NO_PROXY=127.0.0.1,localhost
+
 # 
 # export GHIDRA_HOME="$SOURCE_HOME/ghidra/ghidra_9.3_DEV"
 # 
@@ -97,7 +102,6 @@ export PATH=$PATH:$ANDROID_HOME/tools
 # export PATH=$PATH:$HOME/source/fuchsia/.jiri_root/bin
 # export PATH=/usr/local/sbin:$PATH
 # export PATH=~/.local/:$PATH
-# export PATH=$FLUTTER_HOME/bin:$PATH
 # export PATH="$PATH":"$HOME/.pub-cache/bin"
 # export PATH=$PATH:"/Users/th/Library/Python/3.7/bin"
 # export PATH=$PATH:$DART_HOME/bin
@@ -201,3 +205,6 @@ export PATH=$PATH:$ANDROID_HOME/tools
 # 
 # # pkg_config_path
 # export PKG_CONFIG_PATH="/usr/local/opt/icu4c/lib/pkgconfig"
+
+# tesseract
+export TESSDATA_PREFIX=/usr/local/Cellar/tesseract/4.1.1/share/tessdata
