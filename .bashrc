@@ -208,3 +208,5 @@ export NO_PROXY=127.0.0.1,localhost
 
 # tesseract
 export TESSDATA_PREFIX=/usr/local/Cellar/tesseract/4.1.1/share/tessdata
+
+alias e=emacsclient -a emcs
